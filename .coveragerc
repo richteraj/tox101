@@ -1,4 +1,8 @@
-[coverage:run]
-branch = True
+[run]
+branch = true
 source =
-    tox101
+    src/tox101
+    tests
+
+[report]
+show_missing = true
