@@ -9,8 +9,8 @@ matrix:
     - python: "3.5"
     - python: "3.6"
     - python: "3.7"
-      env:
-        - TOXENV=py,flake8,pylint
+    - env:
+        - TOXENV=flake8,pylint
 before_install:
   - python --version
   - uname -a
