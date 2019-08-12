@@ -1,6 +1,6 @@
 environment:
   global:
-    - TOXENV: py
+    TOXENV: py
 
   matrix:
     - PYTHON: "C:\\Python35-x64"
