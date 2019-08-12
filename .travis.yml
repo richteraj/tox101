@@ -2,7 +2,7 @@ language: python
 dist: xenial
 env:
   global:
-    - TOXENV=py
+    - TOXENV=py,codecov
 matrix:
   include:
     - python: "2.7"
