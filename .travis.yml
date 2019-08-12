@@ -1,21 +1,16 @@
 language: python
 dist: xenial
+env:
+  global:
+    - TOXENV=py
 matrix:
   include:
     - python: "2.7"
-      env:
-        - TOXENV=py27
     - python: "3.5"
-      env:
-        - TOXENV=py35
     - python: "3.6"
-      env:
-        - TOXENV=py36
     - python: "3.7"
       env:
-        - TOXENV=py37
-    - env:
-        - TOXENV=py,pylint,flake8
+        - TOXENV=py,flake8,pylint
 before_install:
   - python --version
   - uname -a
