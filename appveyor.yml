@@ -1,5 +1,6 @@
 environment:
-  TOXENV: py
+  global:
+    - TOXENV: py
 
   matrix:
     - PYTHON: "C:\\Python35-x64"
@@ -10,6 +11,9 @@ environment:
 
 install:
   - "%PYTHON%\\python.exe -m pip install tox"
+  - "%PYTHON%\\python.exe -m virtualenv --version"
+  - "%PYTHON%\\python.exe -m pip --version"
+  - "%PYTHON%\\python.exe -m tox --version"
 build: off
 test_script:
-  - "%PYTHON%\\python.exe -m tox"
+  - "%PYTHON%\\python.exe -m tox -v"
