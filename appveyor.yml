@@ -2,7 +2,8 @@ environment:
   TOXENV: py
 
   matrix:
-    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python27-x64"
+    - PYTHON: "C:\\Python37"
     - PYTHON: "C:\\Python37-x64"
     - PYTHON: "C:\\Python37-x64"
       TOXENV: flake8,pylint
